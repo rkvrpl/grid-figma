@@ -1,37 +1,138 @@
-header {
+header{
     text-align: center;
 }
-.item2{
-    
-    
-}
-section:not(.item){
+main{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 650px 1fr 1fr 650px;
+    grid-template-rows: 1fr repeat(3, 260px) 150px ;
+    grid-row-gap: 40px;
 }
-.button {
+.item1 {
+    grid-area: 1/2/2/4;
+    padding: 20px;
+    text-align: center;
 }
-.head {
+.item2 {
+    grid-area: 2/3/3/4;
+    padding: 16px 12px;
+}
+.img2{
+    grid-area: 2/2/3/3;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item3 {
+    grid-area: 3/2/4/3;
+    padding: 16px 12px;
+}
+.img3{
+    grid-area: 3/3/4/4;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item4 {
+    grid-area: 4/3/5/4;
+    padding: 16px 12px;
+}
+.img4{
+    grid-area: 4/2/5/3;
+    height: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.item5 {
+    grid-area: 5/2/6/4;
+    width: 599px;
+    padding: 0px 30px;
+}
+h1{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+h2{
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; 
 }
 .text {
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 }
-.item {
-    text-align: center;
+.button {
+    padding: 13px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    background: #FFF;
 }
-.text-foter {
-    
+a{
+    text-decoration:none;
+    color: #000;
 }
-footer{
-    text-align: center;
-}
-.contact {
-    text-align: center;
-}
-
 hr {
     border: none;
     border-top: 4px solid #333;
     text-align: center;
-    width: 95%;
+    width: 50%;
     }
+footer{
+    display: grid;
+    grid-template-columns: 450px 1fr  450px;
+    grid-template-rows: repeat(7, 1fr);
+}
+.text-foter1 {
+    grid-area: 1/2/2/3;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.5%;
+}
+.text-foter2 {
+    grid-area: 2/2/3/3;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.5%;
+}
+.contact {
+    grid-area: 3/2/4/3;
+    text-align: center;
+}
+.text-footer3 {
+    grid-area: 4/2/5/3;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.5%;
+}
+.text-footer4 {
+    grid-area: 5/2/6/3;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.5%;
+}
+.text-footer5 {
+    grid-area: 6/2/7/3;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 142.5%;
+    text-decoration-line: underline;
+}
+.logo-foter {
+    grid-area: 7/2/8/3;
+    margin-left: auto;
+    margin-right: auto;
+}
